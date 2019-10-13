@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <link rel="shortcut icon" href="captiveportal-favicon.ico" />
+  <title>Wi-Fi Guest Network</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link href="captiveportal-bootstrap.min.css" rel="stylesheet">
+  <style type="text/css">
+    body {
+      <!-- background: url(captiveportal-back.png); -->
+      background-color: #444;
+       <!-- background: url(captiveportal-pinlayer2.png),url(captiveportal-pinlayer1.png),url(captiveportal-back.png);     -->
+    }
+    .vertical-offset-100 {
+      padding-top:100px;
+    }    
+	
+  .panel-body{
+  
+  background-color:#ffffff;
+  }
+	 <!--
+	 .adbox{
+     
+	 width:270px;
+	 height:200px;
+	 position:absolute;
+	 top:10%;
+	right:1%
+     }
+	 -->
+	 
+	 #adbox{
+     
+	 width:250px;
+	 height:200px;
+	 position:absolute;
+	 top:10%;
+     right:1%
+     }
+	  #adbox  li{
+	  
+	  padding:20px 0px 20px 0px;
+	  }
+	 
+	 .image_size{
+	 
+	 width:250px;
+	 height:200px;
+	 
+	 
+	 
+	 }
+
+	 .panel-body p, ul,li{
+	 
+	 color:#ffffff;
+	 
+	 
+	 }
+	 
+	 #menu_list{
+	 
+	 position:absolute;
+ left:2%;
+
+	 top:10%;
+     
+	 }
+	 
+	  #menu_list ul li{
+	  
+	  padding:20px 0px 20px 0px;
+
+	  color:#000;
+}
+	  <!--
+	.adbox1{
+     
+	 width:270px;
+	 height:200px;
+	 position:absolute;
+	 top:45%;
+	right:1%
+     } 
+	  -->
+	  
+  <!--	
+	.adbox2{
+     
+	 width:270px;
+	 height:200px;
+	 position:absolute;
+	 top:80%;
+	right:1%
+     }
+	 -->
+	  .btn btn-lg btn-success btn-block{
+	  
+	  background-color:#171077;
+	  }
+	 
+	 
+  </style>
+  <script src="captiveportal-jquery-1.11.1.min.js"></script>
+  <script src="captiveportal-bootstrap.min.js"></script>
+</head>
+<body>
+  <script src="captiveportal-tweenlite.min.js"></script>
+
+  
+  
+  
+  <div class="container">
+    <div class="row vertical-offset-100">
+      <div class="col-md-6 col-md-offset-3">
+        <div class="panel panel-default">
+          <div class="panel-heading" style="background-color:#ffffff ;border-color:#171077 ">
+            <h3 class=" "  style="font-family:raleway; color:#171077; text-align:center">KOFORIDUA TECHNICAL UNIVERSITY </h3>
+          </div>
+		  
+		  <div class="panel-heading">
+            <h3 class="panel-title"> </h3>
+          </div>
+          <div class="panel-body">
+            <form method="post" action="$PORTAL_ACTION$" accept-charset="UTF-8" role="form">
+              <fieldset>
+               
+			   <!-- Required input boxes for portal page to work. Only required if user authentication is needed. -->
+               <!--
+			   <p>You are responsible for the security and appropriate use of Wi-Fi Guest Network resources under your control. Using Wi-Fi Guest Network resources for the following is strictly prohibited:</p>
+                <ul> 
+                  <li>Causing a security breach to either Wi-Fi Guest Network or other network resources, including, but not limited to, accessing data, servers, or accounts to which you are not authorized; circumventing user authentication on any device; or sniffing network traffic. </li>
+
+                  <li>Causing a disruption of service to either Wi-Fi Guest Network or other network resources, including, but not limited to, ICMP floods, packet spoofing, denial of service, heap or buffer overflows, and forged routing information for malicious purposes.</li>
+
+                  <li>Introducing honeypots, honeynets, or similar technology on Wi-Fi Guest Network.</li>
+
+                  <li>Violating copyright law, including, but not limited to, illegally duplicating or transmitting copyrighted pictures, music, video, and software. </li>
+
+                  <li>Exporting or importing software, technical information, encryption software, or technology in violation of international or regional export control laws.</li>
+
+                  <li>Use of the Internet or Wi-Fi Guest Network network that violates local laws.</li>
+
+                  <li>Intentionally introducing malicious code, including, but not limited to, viruses, worms, Trojan horses, e-mail bombs, spyware, adware, and keyloggers. </li>
+
+                  <li>Port scanning or security scanning.</li>
+                </ul>
+           
+				
+				<!--  THIS IS THE COMMENTED USER NAME AND Password FIELDS
+				
+				-->
+				<div class="form-group">
+                  <input name="auth_user" type="text" placeholder="Username" class="form-control" style="border-color:#171077">
+				  <p style="padding:5px; "></p>
+                  <input name="auth_pass" type="password" placeholder="Password" class="form-control" style="border-color:#171077">
+                <!--  <input name="auth_voucher" type="text" placeholder="Input your voucher code" class="form-control"> -->
+                </div>
+           
+				
+				
+                <input name="redirurl" type="hidden" value="captiveportal-success.html">
+                <input class="btn btn-lg btn-success btn-block" style=" background-color:#171077;border-color:#ffffff" name="accept" type="submit" value="Click To Continue">
+              </fieldset>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+  
+  <!--
+  </div><script type="text/javascript">
+  $(document).ready(function(){
+    $(document).mousemove(function(e){
+     TweenLite.to($('body'), 
+      .5, 
+      { css: 
+        {
+          backgroundPosition: ""+ parseInt(event.pageX/8) + "px "+parseInt(event.pageY/'12')+"px, "+parseInt(event.pageX/'15')+"px "+parseInt(event.pageY/'15')+"px, "+parseInt(event.pageX/'30')+"px "+parseInt(event.pageY/'30')+"px"
+        }
+      });
+   });
+  });</script>
+
+
+  -->
+
+ 
+   <!--
+  <div id="adbox">
+ <marquee direction="down" scrolldelay="10">
+  <!-- <div id="adbox">
+  <ul>
+   
+   <li>
+   <img src="captiveportal-ad1.jpg" class="image_size">
+   </li>
+   
+   <li>
+   <img src="captiveportal-ad2.jpg" class="image_size">
+   </li> 
+   
+   <li>
+   <img src="captiveportal-ad3.jpg" class="image_size">
+   </li>
+   
+   </ul>
+   </div>
+  </marquee>
+</div>
+-->
+	
+<!-- This is where to edit the menu list -->
+
+<!--
+  <div id="menu_list" ">
+	 
+		<UL>
+	 <h1 style="font-size:30px;font-family:raleway; color:#000;"><u>MENU</u></h1>
+	    
+		<LI>
+		Family size pizza- ¢20.00
+		</LI>
+		<LI>
+		Chicken wings- ¢15.00
+		</LI>
+		<LI>
+		</LI>
+		<LI>
+		</LI>
+		<LI>
+		</LI>
+		
+		<h1 style="font-size:15px;font-family:raleway; color:#000;"><u>Contact Us</u></h1>
+		<li>
+		Website:www.harryskitchen.com
+        </li>
+		<li>
+		Telephone:02023556
+		</li>
+		<li>
+		e-mail:order@harryskitchen.com
+		</li>
+		
+		</UL>
+</div>
+ --> 
+
+ 
+ <!--
+ <span style="font-size:10px"><span style="color:#000; left:60%">Developed By:</span> <a href="http://www.snetgh.net">STEP NETWORK</a>.Powered  By:</span> <a href="http://www.erimaksolutions.com">ERIMAK LIMITED</a> </span></
+ -->
+
+
+ </body>
+</html>
